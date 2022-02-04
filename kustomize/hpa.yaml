@@ -6,20 +6,17 @@ spec:
   behavior:
     scaleDown:
       policies:
-        - periodSeconds: 16
-          type: Pods
-          value: 5
-        - periodSeconds: 16
+        - periodSeconds: 15
           type: Percent
-          value: 99
+          value: 100
       selectPolicy: Max
       stabilizationWindowSeconds: 60
     scaleUp:
       policies:
-        - periodSeconds: 16
+        - periodSeconds: 15
           type: Pods
-          value: 5
-        - periodSeconds: 16
+          value: 4
+        - periodSeconds: 15
           type: Percent
           value: 100
       selectPolicy: Max
@@ -37,4 +34,4 @@ spec:
         type: Utilization
         # scale up if usage is above
         # 99% of the requested CPU (100m)
-        averageUtilization: 99
+        averageUtilization: 98
