@@ -1,0 +1,5 @@
+password: "my-password"
+username: "my-username"
+values.yaml:
+  domain: "my-domain"
+  license: "my-secret-license"
