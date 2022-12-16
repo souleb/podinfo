@@ -11,3 +11,15 @@ maintainers:
 sources:
 - https://github.com/stefanprodan/podinfo
 kubeVersion: ">=1.19.0-0"
+dependencies:
+- name: weave-gitops
+  version: 4.0.8
+  repository: oci://ghcr.io/weaveworks/charts
+  tags:
+  - main
+- name: weave-gitops
+  version: 4.0.9
+  repository: oci://ghcr.io/weaveworks/charts
+  alias: weave-gitops-v12
+  tags:
+  - v0.12.0
